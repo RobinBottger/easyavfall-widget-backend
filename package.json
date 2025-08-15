@@ -1,0 +1,9 @@
+{
+  "name": "easyavfall-widget-backend",
+  "version": "1.0.0",
+  "main": "backend/index.mjs",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
