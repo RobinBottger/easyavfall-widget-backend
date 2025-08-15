@@ -119,5 +119,11 @@ function matchesArticle(code, allowed) {
   });
 }
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => console.log("Running on http://localhost:"+port));
+// Healthcheck root
+app.get("/", (req, res) => {
+  res.type("text").send("✅ Easyavfall Widget API is running. Try /widget/summary");
+});
+
+// Viktig for Vercel: Ikke bruk app.listen(), eksporter app
+export default app;
+
