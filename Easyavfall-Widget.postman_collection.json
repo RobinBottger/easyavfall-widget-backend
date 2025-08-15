@@ -1,0 +1,47 @@
+{
+  "info": {
+    "name": "Easyavfall Widget API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "b1f2b8aa-0000-0000-0000-000000000000"
+  },
+  "item": [
+    {
+      "name": "Current Week \u2013 SEKK & HENTING vs prev_year",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://<din-app>.vercel.app/widget/summary?articles=SEKK,SEKK-1,HENTING&period=current_week&compare=prev_year&dateType=deliveryDate",
+          "protocol": "https",
+          "host": [
+            "<din-app>",
+            "vercel",
+            "app"
+          ],
+          "path": [
+            "widget",
+            "summary"
+          ],
+          "query": [
+            {
+              "key": "articles",
+              "value": "SEKK,SEKK-1,HENTING"
+            },
+            {
+              "key": "period",
+              "value": "current_week"
+            },
+            {
+              "key": "compare",
+              "value": "prev_year"
+            },
+            {
+              "key": "dateType",
+              "value": "deliveryDate"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
