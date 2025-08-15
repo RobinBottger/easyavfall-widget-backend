@@ -1,0 +1,14 @@
+{
+  "name": "easyavfall-widget-backend",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2",
+    "dayjs": "^1.11.11",
+    "iso-week": "^1.0.2"
+  },
+  "scripts": {
+    "start": "node index.mjs"
+  }
+}
